@@ -2,8 +2,9 @@ import axios from 'axios'
 import toast from 'react-hot-toast'
 import { create } from 'zustand'
 
-const BASE_URL = import.meta.env.MODE === "development" ?
-    "http://localhost:3001" : ""
+// const BASE_URL = import.meta.env.MODE === "development" ?
+//     "http://localhost:3001" : ""
+const BASE_URL = import.meta.env.VITE_BASE_URL 
 export const useProductStore = create((set, get) => ({
     products: [],
     loading: false,
