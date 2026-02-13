@@ -62,7 +62,7 @@ const navigate = useNavigate()
 
             <div className='divider'></div>
 
-            <p className='text-gray-600 leading-relaxed'>
+            <p className='text-base-content leading-relaxed'>
               {selectedProduct?.description}
             </p>
 
