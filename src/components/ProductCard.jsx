@@ -30,7 +30,8 @@ const navigate = useNavigate()
           </Link>
           <button
             className='btn btn-sm btn-circle btn-error btn-outline'
-            onClick={() => {
+            onClick={(e) => {
+              e.stopPropagation()
               onDeleteClick(product.id)
             }}
           >
